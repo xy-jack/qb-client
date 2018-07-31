@@ -13,6 +13,7 @@
         <module>qb-service</module>
         <module>qb-web</module>
 		<module>qb-server</module>
+		<module>qb-bean</module>
     </modules>
 
 	<parent>
