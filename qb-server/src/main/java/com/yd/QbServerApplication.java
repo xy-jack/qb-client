@@ -3,6 +3,12 @@ package com.yd;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ *  服务端启动入口
+ *
+ * @date      2018/7/31
+ * @author    YD
+ */
 @SpringBootApplication
 public class QbServerApplication {
 

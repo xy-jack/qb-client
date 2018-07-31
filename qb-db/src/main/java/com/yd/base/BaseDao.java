@@ -7,4 +7,6 @@ package com.yd.base;
  * @author: YD
  */
 public interface BaseDao {
+
+
 }
