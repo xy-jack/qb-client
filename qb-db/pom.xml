@@ -106,7 +106,7 @@
                 </excludes>
             </resource>
             <resource>
-                <directory>src/main/resources/env/${profiles.active}</directory>
+                <directory>../qb-server/src/main/resources/env/${profiles.active}</directory>
             </resource>
         </resources>
 	</build>

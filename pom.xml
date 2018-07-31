@@ -12,6 +12,7 @@
         <module>qb-db</module>
         <module>qb-service</module>
         <module>qb-web</module>
+		<module>qb-server</module>
     </modules>
 
 	<parent>
