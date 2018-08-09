@@ -12,5 +12,5 @@ import tk.mybatis.mapper.common.Mapper;
  */
 public interface OrderDao extends Mapper<OrderBO> {
 
-    OrderBO findByUid(@Param("id") Long uid);
+    OrderBO findByUid(Long uid);
 }
