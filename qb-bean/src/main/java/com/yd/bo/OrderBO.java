@@ -14,8 +14,10 @@ import javax.persistence.Table;
  * @data: 2018/8/8
  * @author: YD
  */
+@Entity
 @NameStyle(Style.camelhumpAndLowercase)
 @Table(name = "order")
+@Data
 public class OrderBO {
 
     @Id
@@ -23,19 +25,4 @@ public class OrderBO {
 
     private Integer saleAmound;
 
-    public Integer getUid() {
-        return uid;
-    }
-
-    public void setUid(Integer uid) {
-        this.uid = uid;
-    }
-
-    public Integer getSaleAmound() {
-        return saleAmound;
-    }
-
-    public void setSaleAmound(Integer saleAmound) {
-        this.saleAmound = saleAmound;
-    }
 }

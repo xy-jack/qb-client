@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://10.1.1.235:3308/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: tps138dev
-    password: F52o0QJCg8@L
+    url: jdbc:mysql://119.23.71.201:3306/my_qb?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: dev
+    password: &GDgdsTGF65HR@
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
   jpa:

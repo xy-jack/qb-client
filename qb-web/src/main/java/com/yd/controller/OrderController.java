@@ -1,7 +1,9 @@
 package com.yd.controller;
 
 import com.yd.OrderService;
+import com.yd.UserService;
 import com.yd.bo.OrderBO;
+import com.yd.bo.UserBO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,9 +21,12 @@ public class OrderController {
     @Autowired
     OrderService orderService;
 
+    @Autowired
+    UserService userService;
+
     @GetMapping("/getOrder/{uid}")
-    public OrderBO getOrder(@PathVariable Long uid) {
+    public UserBO getOrder(@PathVariable Long uid) {
         System.out.println(">>>>>>>>>>>uid:"+uid);
-        return orderService.findByUid(uid);
+        return userService.getUser(uid);
     }
 }
