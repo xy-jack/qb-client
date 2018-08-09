@@ -3,10 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yd</groupId>
     <artifactId>qb-web</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
 
     <parent>
         <groupId>com.yd</groupId>
@@ -14,12 +11,25 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-
-
     <dependencies>
+        <!--支持web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--实体类-->
+        <dependency>
+            <groupId>com.yd</groupId>
+            <artifactId>qb-bean</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!--service-->
+        <dependency>
+            <groupId>com.yd</groupId>
+            <artifactId>qb-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

@@ -16,7 +16,18 @@
 
 
     <dependencies>
-
+        <!--实体类-->
+        <dependency>
+            <groupId>com.yd</groupId>
+            <artifactId>qb-bean</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--dao-->
+        <dependency>
+            <groupId>com.yd</groupId>
+            <artifactId>qb-db</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 
