@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * TODO
+ * 用户表
  *
  * @data: 2018/8/8
  * @author: YD
@@ -21,7 +21,6 @@ public class UserController {
 
     @GetMapping("/getUser/{userName}")
     public UserBO getOrder(@PathVariable String userName) {
-        System.out.println(">>>>>>>>>>>userName:"+userName);
         return userService.findByUserName(userName);
     }
 }

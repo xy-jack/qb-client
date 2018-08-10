@@ -11,7 +11,7 @@ spring:
   jpa:
       database: MYSQL
       hibernate:
-        ddl-auto: update  #自动更新
+        ddl-auto: update  #update自动更新 ,  create 创建表
         naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
         dialect: org.hibernate.dialect.MySQL5Dialec
       show-sql: true      #日志中显示sql语句
