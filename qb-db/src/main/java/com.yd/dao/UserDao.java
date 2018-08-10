@@ -2,6 +2,7 @@ package com.yd.dao;
 
 import com.yd.bo.UserBO;
 import com.yd.vo.UserVO;
+import org.springframework.data.jpa.repository.JpaRepository;
 import tk.mybatis.mapper.common.Mapper;
 
 /**
@@ -10,7 +11,7 @@ import tk.mybatis.mapper.common.Mapper;
  * @date      2018/8/6
  * @author    YD
  */
-public interface UserDao extends Mapper<UserBO>{
+public interface UserDao extends JpaRepository<UserBO, Long> {
 
     /**
      *  根据id获取一个用户
@@ -20,5 +21,5 @@ public interface UserDao extends Mapper<UserBO>{
      * @author    YD
      * @return    com.yd.bo.UserBO
      */
-    UserBO getUser(Long id);
+    UserBO findByUserName(String userName);
 }

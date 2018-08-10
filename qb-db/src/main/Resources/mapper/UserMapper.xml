@@ -3,8 +3,8 @@
 <mapper namespace="com.yd.dao.UserDao">
 
 
-    <select id="findByUid" resultType="com.yd.bo.OrderBO">
-        select * from order where uid = #{id}
-    </select>
+    <!--<select id="findByUid" resultType="com.yd.bo.UserBO">
+        select * from `user` where user_name = #{userName}
+    </select>-->
 
 </mapper>
